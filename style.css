@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ebe6df, #ebadd3);
+    color: #333;
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4em; 
+    margin: 40px 0 20px;
+    animation: glow 2s infinite alternate;
+    color: #ff1493;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff;}
+    to { text-shadow: 0 0 30px #ff69b4, 0 0 50px #ff1493;}
+    
+}
+
+#countdown {
+    font-size: 1.8em;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#countdown div {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 100px;
+}
+
+.slideshow-container {
+    max-width: 90%;
+    margin: 40px;
+    position: relative;
+    border-radius: 40px;
+    min-width: 100px;
+}
+
+
+.slides {
+    display: none;
+    width: 100%;
+    animation: fade 1.5s;
+}
+
+.slides.active {
+    display: block;
+}
+
+#playButton {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 30px;
+    border: none;
+    background: #ff69b4;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+#playButton:hover {
+    transform: scale(1.05);
+}
+
+
+#birthdayMessage {
+    font-size: 2.5em;
+    margin: 50px 0;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 1.3em;
+    }
+    #countdown {
+        font-size: 1.4em;
+        flex-direction: column;
+    }
+    #countdown div {
+        min-width: 80px;
+    }
+    #birthdayMessage {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .container {
+        padding: 10px;
+    }
+}
