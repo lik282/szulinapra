@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // --------------------
     // COUNTDOWN
     // --------------------
-    const birthday = new Date("2025-12-13T18:54:00").getTime();
+    const birthday = new Date("2025-12-19T12:00:00").getTime();
 
 const timer = setInterval(function () {
     const now = new Date().getTime();
