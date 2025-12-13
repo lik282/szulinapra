@@ -84,6 +84,11 @@ h1 {
     margin: 50px 0;
 }
 
+#birthdayMessage,
+.slideshow-container,
+#playButton {
+    display: none;
+}
 
 @media (max-width: 768px) {
     h1 {
