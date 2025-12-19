@@ -89,6 +89,7 @@ h1 {
 .slideshow-container,
 #playButton {
     display: none;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
